@@ -24,4 +24,8 @@ class Factory {
         /// @return Returns the result of the operation
         std::string ProductOperation() const;
 
+        /// @brief The GetPrice() function gets the price of the particular product.
+        /// @return Returns the price of the product as a float
+        float GetPrice() const;
+
 };

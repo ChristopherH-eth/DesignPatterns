@@ -14,3 +14,12 @@ std::string Factory::ProductOperation() const {
     delete product;
     return result;
 }
+
+/// Get the price of the product
+float Factory::GetPrice() const {
+    Product* product = this->FactoryMethod();
+    float result = product->GetPrice();
+
+    delete product;
+    return result;
+}

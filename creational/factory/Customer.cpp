@@ -18,7 +18,8 @@
 /// @brief The CustomerRequests() function can perform an operation on a product created by a factory.
 /// @param factory The CleaningProductFactory instance to be used with client side iteractions
 void CustomerRequests(const Factory& factory) {
-    std::cout << "I'm: " << factory.ProductOperation() << "\n" << std::endl;
+    std::cout << "I'm: " << factory.ProductOperation() << std::endl;
+    std::cout << "I paid " << factory.GetPrice() << "\n" << std::endl;
 }
 
 int main() {

@@ -20,4 +20,8 @@ class Product {
         /// @return Returns a string regarding the product operation
         virtual std::string Operation() const = 0;
 
+        /// @brief Pure virtual function to be overridden in Product implementations
+        /// @return Returns a float price
+        virtual float GetPrice() const = 0;
+
 };
